@@ -1,0 +1,314 @@
+<html>
+<head><title>Cove</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://kit.fontawesome.com/9fbff8cf9b.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <nav>
+       <div class="nav-left">
+           <img src="images1/logo3.png" class="logo">
+           <ul>
+               <li><img src="images1/notification.png"></li>
+               <li><img src="images1/inbox.png"></li>
+               <li><a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/watch.html"><img src="images1/video.png"></a></li>
+           </ul>
+       </div>
+       <div class="nav-right">
+           <div class="search-box">
+           <img src="images1/search.png">
+               <input type="text" placeholder="search">
+           </div>
+           <div class="nav-user-icon online">
+               <img src="images1/profile1.jpg">
+       </div>
+    </div>
+   </nav>
+
+    <div class="container">
+        
+       <div class="left-sidebar">
+           <button class="create">Create</button>
+           <div class="imp-links">
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/Home.html#"><img src="images1/home.png">Home<span></span></a>
+               <a href="#"><img src="images1/news.png">Latest News<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/friends.html"><img src="images1/friends.png">Friends<span></span></a>
+               <a href="#"><img src="images1/group.png">Group<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/marketplace.html"><img src="images1/marketplace.png">Marketplace<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/watch.html"><img src="images1/watch.png">Watch<span></span></a>
+               <a href="#"><p style="color:#0da2a5;">See More<span></span></p></a>
+               </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images1/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images1/shortcut-2.png">Web Design course</a>
+                <a href="#"><img src="images1/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images1/shortcut-4.png">Website Experts</a>
+            </div>   
+                   
+       </div>
+        
+       <div class="main-content">
+           <div class="story-gallery">
+               <div class="story story1">
+                   <img src="images1/upload.png">
+                   <p>Post Story</p>
+               </div>
+               <div class="story story2">
+                   <img src="images1/member-1.png">
+                   <p>Alison</p>
+               </div>
+               <div class="story story3">
+                   <img src="images1/member-2.png">
+                   <p>Jackson</p>
+               </div>
+               <div class="story story4">
+                   <img src="images1/member-3.png">
+                   <p>Samona</p>
+               </div>
+               <div class="story story5">
+                   <img src="images1/member-4.png">
+                   <p>John Doe</p>
+               </div>
+           </div>  
+
+           <div class="write-post-container">
+               <div class="user-profile">
+                   <img src="images1/profile1.jpg">
+                   <div>
+                       <p>Namsam Rai</p>
+                       <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                   </div>    
+                   </div>
+               <div class="post-input-container">
+                <div class="bg-white rounded-3xl shadow p-4" id="cont">
+                <div class="flex items-center gap-x-3">
+                    <input onclick="showCreatePostModal()" 
+                           type="text" 
+                           placeholder="What's on your mind, Namsam?" 
+                           class="flex-1 bg-[#f0f2f5] rounded-3xl px-6 py-3 text-base focus:outline-none cursor-pointer hover:bg-[#e4e6ea]">
+                </div>
+                
+                <div class="border-t mt-4 pt-4 flex justify-around text-gray-600 font-medium">
+                    <button onclick="fakeLiveVideo()" class="action-btn flex-1 flex items-center justify-center gap-x-3 py-2 rounded-3xl">
+                        <i class="fa-solid fa-video text-red-500 text-2xl"></i>
+                        <span class="hidden sm:block">Live video</span>
+                    </button>
+                    <button onclick="fakePhotoVideo()" class="action-btn flex-1 flex items-center justify-center gap-x-3 py-2 rounded-3xl">
+                        <i class="fa-solid fa-images text-green-500 text-2xl"></i>
+                        <span class="hidden sm:block">Photo / video</span>
+                    </button>
+                    <button onclick="useAIPostIdea()" class="action-btn flex-1 flex items-center justify-center gap-x-3 py-2 rounded-3xl text-[#1877f2]">
+                        <i class="fa-solid fa-wand-magic-sparkles fa-xl" style="color: rgb(99, 230, 190);"></i>
+                        <span class="hidden sm:block" style="color:#626262;">AI Idea</span>
+                    </button>
+                </div>
+            </div>
+                   </div>
+               </div>
+           
+           <div class="post-container">
+               <div class="post-row">
+                     <div class="user-profile">
+                        <img src="images1/profile1.jpg">
+                     <div>
+                        <p>Namsam Rai</p>
+                        <span>June 24 2021, 1:40 pm</span>
+                    </div>    
+                 </div>   
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+               </div>
+          
+               <p class="post-text"><span>@Cove</span><a href="#">#Fewa Lake</a> <a href="#">#Pokhara</a></p>
+               <img src="images1/fewa.jpg" class="post-img">
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images1/like-blue.png"> 120</div>
+                       <div><img src="images1/comments.png"> 45</div>
+                       <div><img src="images1/share.png"> 20</div>
+                       </div>
+                   <div class="post-profile-icons">
+                       <img src="images1/profile1.jpg"><i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+            </div>
+
+            <div class="post-container">
+               <div class="post-row">
+                     <div class="user-profile">
+                        <img src="images1/profile1.jpg">
+                     <div>
+                        <p>Namsam Rai</p>
+                        <span>June 24 2021, 1:40 pm</span>
+                    </div>    
+                 </div>   
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+               </div>
+          
+               <p class="post-text">Like and share this image with friends, tag <span>@Cove</span> facebook page.<a href="#">#Kathmandu</a> <a href="#">#Nepal</a></p>
+               <img src="images1/ktm.avif" class="post-img">
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images1/like.png"> 120</div>
+                       <div><img src="images1/comments.png"> 45</div>
+                       <div><img src="images1/share.png"> 20</div>
+                       </div>
+                   <div class="post-profile-icons">
+                       <img src="images1/profile1.jpg"><i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+            </div>
+
+           <div class="post-container">
+               <div class="post-row">
+                     <div class="user-profile">
+                        <img src="images1/profile1.jpg">
+                     <div>
+                        <p>Namsam Rai</p>
+                        <span>June 24 2021, 1:40 pm</span>
+                    </div>    
+                 </div>   
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+               </div>
+          
+               <p class="post-text">Like and share this pic with friends, tag <span>@Cove</span> facebook page on your post.<a href="#">#Friends</a> <a href="#">#Fun</a></p>
+               <img src="images1/feed-image-3.png" class="post-img">
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images1/like.png"> 120</div>
+                       <div><img src="images1/comments.png"> 45</div>
+                       <div><img src="images1/share.png"> 20</div>
+                       </div>
+                   <div class="post-profile-icons">
+                       <img src="images1/profile1.jpg"><i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+            </div>
+
+           <div class="post-container">
+               <div class="post-row">
+                     <div class="user-profile">
+                        <img src="images1/profile1.jpg">
+                     <div>
+                        <p>Namsam Rai</p>
+                        <span>June 24 2021, 1:40 pm</span>
+                    </div>    
+                 </div>   
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+               </div>
+          
+               <p class="post-text">Like and share this image with friends, tag <span>@Cove</span> facebook page on your post. <a href="#">#mountain</a> <a href="#">#top</a></p>
+               <img src="images1/mount.jpg" height="20px"class="post-img">
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images1/like.png"> 120</div>
+                       <div><img src="images1/comments.png"> 45</div>
+                       <div><img src="images1/share.png"> 20</div>
+                       </div>
+                   <div class="post-profile-icons">
+                       <img src="images1/profile1.jpg"><i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+            </div>
+
+           <div class="post-container">
+               <div class="post-row">
+                     <div class="user-profile">
+                        <img src="images1/profile1.jpg">
+                     <div>
+                        <p>Namsam Rai</p>
+                        <span>June 24 2021, 1:40 pm</span>
+                    </div>    
+                 </div>   
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+               </div>
+          
+               <p class="post-text">Like and share this image with friends, tag <span>@Cove</span> facebook page on your post. <a href="#">#Victoria Falls</a> <a href="#">#Zimbabwe</a></p>
+               <img src="images1/falls.webp" class="post-img">
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images1/like.png"> 120</div>
+                       <div><img src="images1/comments.png"> 45</div>
+                       <div><img src="images1/share.png"> 20</div>
+                       </div>
+                   <div class="post-profile-icons">
+                       <img src="images1/profile1.jpg"><i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+            </div>
+
+             <button type="button" class="load-more-btn">Load More</button>
+            </div>
+
+        
+       <div class="right-sidebar">
+           <div class="events">
+           <div class="sidebar-title">
+               <h4>Events</h4>
+               <a href="#">See All</a>
+           </div>
+
+           <div class="event">
+               <div class="left-event">
+                   <h3>25</h3>
+                   <span>December</span>
+               </div>
+               <div class="right-event">
+                   <h4>Christmas</h4>
+                   <p><i class="fa-solid fa-location-dot"></i>Tech Park</p>
+                   <a href="#">More Info</a>
+               </div>
+           </div>    
+             <div class="event">
+               <div class="left-event">
+                   <h3>5</h3>
+                   <span>June</span>
+               </div>
+               <div class="right-event">
+                   <h4>World Environment Day</h4>
+                   <p><i class="fa-solid fa-location-dot"></i>Kathmandu</p>
+                   <a href="#">More Info</a>
+               </div>
+           </div>    
+        </div>
+           <div class="advertise">
+               <div class="sidebar-title">
+               <h4>Advertisement</h4>
+               <a href="#">Close</a>
+           </div>
+           <img src="images1/veneno.webp" class="sidebar-ads">    
+               </div>
+           
+           <div class="convo">
+           <div class="sidebar-title">
+               <h4>Conversation</h4>
+               <a href="#">Hide Chat</a>
+               </div>
+
+           <div class="online-list">
+               <div class="online">
+                   <img src="images1/member-1.png">
+               </div>
+               <p>Alison Mina</p>
+               </div>
+           <div class="online-list">
+               <div class="online">
+                   <img src="images1/member-2.png">
+               </div>
+               <p>Jackson Aston</p>
+               </div>
+           <div class="online-list">
+               <div class="online">
+                   <img src="images1/member-3.png">
+               </div>
+               <p>Samona rose</p>
+               </div>
+            </div>
+       </div>
+    </div>
+    <div class="footer">
+        <p>@copyright 2026 - St. Xavier's College</p>
+        </div>
+</body>
+</html>

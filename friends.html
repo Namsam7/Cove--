@@ -1,0 +1,369 @@
+<html>
+<head><title>Cove</title>
+<link rel="stylesheet" href="stylefriend.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://kit.fontawesome.com/9fbff8cf9b.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <nav>
+       <div class="nav-left">
+           <img src="images1/logo3.png" class="logo">
+       </div>
+       <div class="nav-right">
+           <div class="search-box">
+           <img src="images1/search.png">
+               <input type="text" placeholder="search">
+               <img src="images2/voice-search.png" class="mic-icon">
+           </div>
+             <ul>
+               <li><img src="images1/notification.png"></li>
+               <li><img src="images1/inbox.png"></li>
+               <li><a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/watch.html"><img src="images1/video.png"></a></li>
+           </ul>
+           <div class="nav-user-icon online">
+               <img src="images1/profile1.jpg">
+       </div>
+    </div>
+   </nav>
+    
+    <div class="container">
+        
+       <div class="left-sidebar">
+           <button class="create">Create</button>
+           <div class="imp-links">
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/Home.html#"><img src="images1/home.png">Home<span></span></a>
+               <a href="#"><img src="images1/news.png">Latest News<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/friends.html"><img src="images1/friends.png">Friends<span></span></a>
+               <a href="#"><img src="images1/group.png">Group<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/marketplace.html"><img src="images1/marketplace.png">Marketplace<span></span></a>
+               <a href="file:///home/chronos/u-515fcf1578a1de3bb3cba85436e3168ab9e480f7/MyFiles/Cove/watch.html"><img src="images1/watch.png">Watch<span></span></a>
+               <a href="#"><p style="color:#0da2a5;">See More<span></span></p></a>
+               </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images1/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images1/shortcut-2.png">Web Design course</a>
+                <a href="#"><img src="images1/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images1/shortcut-4.png">Website Experts</a>
+            </div>   
+       </div>
+        
+       <div class="main-content">
+           <!-- Left Sidebar Menu -->
+        <aside class="left-sidebars">
+            <div class="sidebar-header">
+                <h1>Friends</h1>
+            </div>
+            
+            <ul class="friends-menu">
+                <li class="menu-item active" data-section="requests">
+                    <span class="menu-icon">👥</span>
+                    Friend requests
+                    <span class="badge" id="requests-count">3</span>
+                </li>
+                <li class="menu-item" data-section="suggestions">
+                    <span class="menu-icon">⭐</span>
+                    Suggestions
+                </li>
+                <li class="menu-item" data-section="all-friends">
+                    <span class="menu-icon">👫</span>
+                    All friends
+                    <span class="badge">142</span>
+                </li>
+            </ul>
+        </aside>
+    
+      
+        <main class="main-content1">
+            
+        
+            <div id="requests-section" class="content-section active">
+                <div class="section-header">
+                    <h2>Friend requests</h2>
+                    <span class="section-count">3 requests</span>
+                </div>
+
+                <div class="cards-grid" id="requests-grid">
+                  
+                </div>
+            </div>
+
+       
+            <div id="suggestions-section" class="content-section">
+                <div class="section-header">
+                    <h2>People you may know</h2>
+                    <span class="section-count">12 suggestions</span>
+                </div>
+
+                <div class="cards-grid" id="suggestions-grid">
+                 
+                </div>
+            </div>
+
+           
+            <div id="all-friends-section" class="content-section">
+                <div class="section-header">
+                    <h2>Your friends</h2>
+                    <span class="section-count">142 friends</span>
+                </div>
+
+                <div class="friends-grid" id="friends-grid">
+                   
+                </div>
+            </div>
+        </main>
+    
+
+ 
+    <div id="toast" class="toast">Friend request accepted!</div>
+
+       </div>
+      </div>
+    
+        <div class="footer">
+        <p>@copyright 2026 - St. Xavier's College</p>
+        </div>
+
+    <script>
+       
+        const requestsData = [
+            {
+                id: 1,
+                name: "Emma Thompson",
+                avatar: "👩‍💼",
+                bg: "#FF6B6B",
+                mutual: "8 mutual friends",
+                time: "4 hours ago"
+            },
+            {
+                id: 2,
+                name: "Liam Patel",
+                avatar: "👨‍🚀",
+                bg: "#4ECDC4",
+                mutual: "2 mutual friends",
+                time: "Yesterday"
+            },
+            {
+                id: 3,
+                name: "Sophia Chen",
+                avatar: "👩‍🔬",
+                bg: "#45B7D1",
+                mutual: "14 mutual friends",
+                time: "2 days ago"
+            }
+        ];
+
+        const suggestionsData = [
+            {
+                id: 4,
+                name: "Noah Garcia",
+                avatar: "👨‍💻",
+                bg: "#6C5CE7",
+                mutual: "5 mutual friends"
+            },
+            {
+                id: 5,
+                name: "Olivia Martinez",
+                avatar: "👩‍🎨",
+                bg: "#FD79A8",
+                mutual: "11 mutual friends"
+            },
+            {
+                id: 6,
+                name: "James Wilson",
+                avatar: "👨‍🔧",
+                bg: "#00B894",
+                mutual: "3 mutual friends"
+            },
+            {
+                id: 7,
+                name: "Ava Rodriguez",
+                avatar: "👩‍⚕️",
+                bg: "#E17055",
+                mutual: "9 mutual friends"
+            }
+        ];
+
+        const friendsData = [
+            { id: 8, name: "Alison Mina", avatar: "👩‍💼", bg: "#FF6B6B" },
+            { id: 9, name: "Jackson Aston", avatar: "👨‍💻", bg: "#4ECDC4" },
+            { id: 10, name: "Samona rose", avatar: "👩‍🎓", bg: "#45B7D1" },
+            { id: 11, name: "Ryan Kim", avatar: "👨‍🔧", bg: "#96CEB4" },
+            { id: 12, name: "John Doe", avatar: "👩‍🌾", bg: "#FF8C42" },
+            { id: 13, name: "David Park", avatar: "👨‍🚀", bg: "#6C5CE7" }
+        ];
+
+      
+        function renderRequests() {
+            const grid = document.getElementById('requests-grid');
+            grid.innerHTML = '';
+            
+            requestsData.forEach((person, index) => {
+                const card = document.createElement('div');
+                card.className = 'friend-card';
+                card.innerHTML = `
+                    <div class="card-avatar" style="background: ${person.bg}">${person.avatar}</div>
+                    <div class="card-info">
+                        <div class="card-name">${person.name}</div>
+                        <div class="card-mutual">${person.mutual}</div>
+                        <div class="card-time">${person.time}</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-accept" data-id="${person.id}">Accept</button>
+                        <button class="btn-decline" data-id="${person.id}">Decline</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+           
+            document.querySelectorAll('.btn-accept').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    handleAccept(id);
+                });
+            });
+
+            document.querySelectorAll('.btn-decline').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    handleDecline(id);
+                });
+            });
+        }
+
+        function renderSuggestions() {
+            const grid = document.getElementById('suggestions-grid');
+            grid.innerHTML = '';
+            
+            suggestionsData.forEach(person => {
+                const card = document.createElement('div');
+                card.className = 'friend-card';
+                card.innerHTML = `
+                    <div class="card-avatar" style="background: ${person.bg}">${person.avatar}</div>
+                    <div class="card-info">
+                        <div class="card-name">${person.name}</div>
+                        <div class="card-mutual">${person.mutual}</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-add" data-id="${person.id}">Add friend</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+
+            document.querySelectorAll('.btn-add').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const btnEl = e.target;
+                    if (!btnEl.disabled) {
+                        btnEl.textContent = 'Request sent ✓';
+                        btnEl.style.background = '#00c853';
+                        btnEl.disabled = true;
+                        
+                       
+                        showToast('Friend request sent!');
+                    }
+                });
+            });
+        }
+
+        function renderFriends() {
+            const grid = document.getElementById('friends-grid');
+            grid.innerHTML = '';
+            
+            friendsData.forEach(person => {
+                const card = document.createElement('div');
+                card.className = 'friend-card friend-list-card';
+                card.innerHTML = `
+                    <div class="card-avatar" style="background: ${person.bg}">${person.avatar}</div>
+                    <div class="card-info">
+                        <div class="card-name">${person.name}</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-message">Message</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function handleAccept(id) {
+   
+            const index = requestsData.findIndex(item => item.id === id);
+            if (index > -1) {
+                requestsData.splice(index, 1);
+                
+             
+                renderRequests();
+                
+              
+                document.getElementById('requests-count').textContent = requestsData.length;
+                
+               
+                showToast('Friend request accepted! 🎉');
+            }
+        }
+
+        function handleDecline(id) {
+            const index = requestsData.findIndex(item => item.id === id);
+            if (index > -1) {
+                requestsData.splice(index, 1);
+                renderRequests();
+                document.getElementById('requests-count').textContent = requestsData.length;
+                showToast('Request declined');
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2800);
+        }
+
+       
+        function switchSection(section) {
+           
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+        
+            const activeItem = document.querySelector(`.menu-item[data-section="${section}"]`);
+            if (activeItem) activeItem.classList.add('active');
+            
+
+            document.querySelectorAll('.content-section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            
+      
+            const target = document.getElementById(section + '-section');
+            if (target) target.classList.add('active');
+        }
+
+     
+        window.onload = function() {
+            renderRequests();
+            renderSuggestions();
+            renderFriends();
+            
+          
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const section = item.getAttribute('data-section');
+                    switchSection(section);
+                });
+            });
+            
+            console.log('%c✅ Facebook-style Friends page ready! (Requests + Accept/Decline + Suggestions + Friends)', 'color:#1877f2; font-size:15px; font-weight:bold');
+        };
+    </script>
+    
+</body>
+</html>
